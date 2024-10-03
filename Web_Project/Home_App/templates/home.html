@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %} Home {% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'img/images/banner.jpg' %}" class="d-block w-100" alt="Banner Image" height='550'>
+        </div>
+    </div>
+</div>
+{% endblock banner-slider %}
+
+{% block information %}
+<div class="container">
+    <div class="bg-success text-center p-5 text-white border-bottom shadow">
+        <h1> Products </h1>
+        <small class="fs-5">
+            We offer a diverse range of plants, including flowering plants like the Rose Plant, 
+            which adds vibrant colors and fragrance to any garden; decorative plants such as the Areca Palm, 
+            known for its lush, tropical foliage perfect for indoor spaces; and fruit plants like the Mango Tree,
+            which not only provides delicious fruits but also enhances your garden's beauty with its large, leafy presence.
+            Each plant is easy to care for, making them ideal for both beginner and experienced gardeners.
+        </small>
+    </div>
+</div>
+{% endblock information %}
+
+{% block main-content %}
+<div class="container">
+    <h2 class="text-center"> Products </h2>
+    <br><br>
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="goodnesssec rose smbg text-center " style="background-color:black; height:400">
+                <a href="{% url 'category' 'RS' %}">
+                    <img src="{% static 'img/images/flower.png' %}" class="img-fluid" alt="Rose Plant">
+                    <p class="rospro">Flower</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="goodnesssec rose decbgpro text-center" style="background-color:black">
+                <a href="{% url 'category' 'DP' %}">
+                    <img src="{% static 'img/images/decorative.png' %}" class="img-fluid" alt="Decorative Plant">
+                    <p class="rospro">Decorative Plant</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6">
+            <div class="goodnesssec rose rose text-center" style="background-color:black">
+                <a href="{% url 'category' 'FP' %}">
+                    <img src="{% static 'img/images/fruit.png' %}" class="img-fluid" alt="Fruit Plant">
+                    <p class="rospro">Fruit Plant</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <br/><br/>
+</div>
+{% endblock main-content %}

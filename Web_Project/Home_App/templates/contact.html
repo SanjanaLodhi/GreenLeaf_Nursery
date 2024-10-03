@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'img/images/banner.jpg' %}" class="d-block w-100" alt="Banner Image" height='550'>
+        </div>
+    </div>
+</div>
+{% endblock banner-slider %}
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">Contact Us</h1>
+    <br>
+    <div class=" row container"> 
+        <p class="fs-4 text-center">Address :</p>
+        <p class="fs-4 text-center">Contact :</p>
+        <p class="fs-4 text-center">Email :</p>
+    </div>
+</div>
+
+<br><br>
+{% endblock main-content %}

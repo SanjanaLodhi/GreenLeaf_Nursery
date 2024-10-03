@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}About{% endblock title %}
+
+{% block banner-slider %}
+<div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'img/images/banner.jpg' %}" class="d-block w-100" alt="Banner Image" height='550'>
+        </div>
+    </div>
+</div>
+{% endblock banner-slider %}
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us </h2>
+    <br>
+    <div class='row container'>
+        <p class="fs-4 text-center">At Sanvi Plants, we pride ourselves on:
+
+            A Wide Selection: From vibrant flowers to lush decorative plants and hardy fruit trees, we offer a diverse range of plants to suit any taste or space.
+            Expert Care & Guidance: Our team of plant specialists is always here to help you with personalized care tips and guidance to keep your plants healthy and growing.
+            Sustainability & Quality: We are committed to sustainable gardening practices, ensuring that our plants are grown with care and responsibility, using eco-friendly methods.
+            Customer Satisfaction: Whether you're a seasoned gardener or a beginner, we’re dedicated to providing exceptional customer service, helping you every step of the way on your gardening journey.
+        </p>
+    </div>
+    <br><br>
+    <h2 class="text-center">Mission </h2>
+    <br>
+    <div class='row container'>
+        <p class="fs-4 text-center">At Sanvi Plant, our mission is to nurture the connection between people and nature by providing 
+            high-quality, sustainable plants that inspire beauty, wellness, and environmental responsibility. We are dedicated to
+            helping both experienced and novice gardeners cultivate thriving green spaces, whether indoors or outdoors. Through 
+            expert guidance, exceptional customer care, and eco-friendly practices, we aim to make plant care accessible and enjoyable
+            for everyone, fostering a greener and healthier world for future generations.
+        </p>
+    </div>
+
+</div>
+<br><br>
+{% endblock main-content %}
